@@ -1,6 +1,6 @@
 import { View, Text, ImageBackground } from "react-native";
 import React, { useState } from "react";
-import { Box, Button, Heading, HStack, TextArea } from "native-base";
+import { Alert, Box, Button, Heading, HStack, TextArea } from "native-base";
 import styles from "./styles";
 import { MaterialIcons } from "@expo/vector-icons";
 
@@ -55,7 +55,12 @@ const Uploade = () => {
       </Box>
       <View>
         <Button style={styles.btn}>
-          <Text style={styles.btnText}>Submit</Text>
+          <Text
+            style={styles.btnText}
+            onPress={() => alert("Selection successfully Submited!")}
+          >
+            Submit
+          </Text>
         </Button>
       </View>
     </ImageBackground>

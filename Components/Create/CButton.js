@@ -7,7 +7,7 @@ const CButton = () => {
   const navigation = useNavigation();
   return (
     <Pressable onPress={() => navigation.navigate("Upload")}>
-      <MaterialIcons name="create" size={24} color="white" />
+      <MaterialIcons name="create" size={25} color="white" />
     </Pressable>
   );
 };
